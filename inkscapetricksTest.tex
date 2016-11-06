@@ -1,0 +1,24 @@
+\documentclass{article}
+
+\usepackage{graphicx}
+\usepackage{inkscapetricks}
+
+\title{The Inkscape Tricks Package for \LaTeX}
+\author{Jaap Kokorian}
+
+\begin{document}
+\maketitle
+
+\begin{figure}[htbp]
+\includesvg[width=0.5\textwidth]{figures/shapes}
+\caption{An svg image rendered with latex.}
+\end{figure}
+%
+\begin{figure}[htbp]
+\includesvg[tex=false,width=0.5\textwidth]{figures/shapes}
+\caption{An svg image saved as pdf.}
+\end{figure}
+%
+
+
+\end{document}
